@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dark:bg-gray-800 bg-blue-800 w-full py-4 lg:px-6">
+        <div class="flex justify-between px-3 lg:hidden mb-8">
+            <div class="flex items-center">
+                <img src="logo.svg" alt="" class="w-6 mr-3">
+                <h1 class="text-gray-100 dark:text-white font-semibold text-xl">Rubick</h1>
+            </div>
+            <button class="menu text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col lg:flex lg:flex-row">
+            <!-- sidenav -->
+            <div class="hidden lg:block w-full lg:w-1/6 p-4 transform transition-all duration-100 items">
+                <!-- logo -->
+                <div class="flex items-center border-b-2 border-gray-500 pb-6 ">
+                    <img src="logo.svg" alt="" class="w-6 mr-3">
+                    <h1 class="text-gray-100 font-semibold text-xl">Rubick</h1>
+                </div>
+                <!-- nav-1 -->
+                <nav class="mt-6 border-b-2 border-gray-500 pb-10">
+                    <div class="flex transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <a href="index.html" class="text-gray-100 font-medium text-sm">Dashboard</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Menu Layout</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                        </svg>
+                        <a href="inbox.html" class="text-gray-100 font-normal text-sm">Inbox</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hard-drive text-gray-100 mr-3"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>
+                        <a href="file.html" class="text-gray-100 font-normal text-sm">File Manager</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Point Of Scale</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Chat</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Post</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Calendar</a>
+                    </div>
+                </nav>
+                <!-- nav-2 -->
+                <nav class="mt-6 border-b-2 border-gray-500 pb-10">
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Crud</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Users</a>
+                        
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Profile</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Pages</a>
+                        
+                    </div>
+                    
+                </nav>
+                <!-- nav-3 -->
+                <nav class="mt-6 ">
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                        </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Components</a>
+                        
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Forms</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hard-drive text-gray-100 mr-3"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Widgets</a>
+                        
+                    </div>
+                </nav>
+            </div>
+            <!-- theme -->
+            <div class="bg-gray-100 dark:bg-gray-700 p-4 flex-grow rounded-3xl relative">
+                <!-- nav -->
+                <div class="flex justify-between border-b-2 border-gray-300 dark:border-gray-600 pb-4">
+                    <!-- flex-1 -->
+                    <div class="hidden md:flex items-center">
+                        <a href="" class="flex items-center text-blue-600 dark:text-blue-400 text-sm">Application <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                        <a href="" class="text-sm text-gray-600 dark:text-gray-100">Dashboard</a>
+                    </div>
+                    <!-- flex-2 -->
+                    <div class="flex items-center">
+                        <div class="flex bg-gray-300 py-2 px-3 rounded-full mr-4">
+                            <input type="search" name="" id="" placeholder="Search" class="bg-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                        </div>
+                        <a href="" class="mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                              </svg>
+                        </a>
+                        <a href="" class="mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- point of scale -->
+                <div class="mt-4">
+                    <!-- title -->
+                    <div class="flex flex-col md:flex-row justify-between">
+                        <div>
+                            <h1 class="font-medium text-gray-700 text-lg">Point of Scale</h1>
+                        </div>
+                        <div>
+                            <button class="bg-blue-800 px-3 py-2 mt-4 md:mt-0 text-gray-200 font-medium rounded-lg">New Order</button>
+                        </div>
+                    </div>
+                    <!-- main -->
+                    <div class="flex flex-col lg:flex lg:flex-row mt-4">
+                        <!-- flex-left -->
+                        <div class="w-full lg:w-2/3 mr-3">
+                            <!-- search -->
+                            <div class="flex flex-row justify-between">
+                                <div class="flex bg-white py-2 px-3 rounded-lg mr-4">
+                                    <input type="search" name="" id="" placeholder="Search item.." class="bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                      </svg>
+                                </div>
+                                <div>
+                                    <button class="bg-white px-3 py-2 rounded-lg text-gray-500 font-medium">Sort by</button>
+                                </div>
+                            </div>
+                            <!-- grid-1 -->
+                            <div class="grid grid-cols-1 md:grid md:grid-cols-3 gap-6 mt-5 border-b-2 border-gray-200 pb-8">
+                                <button class="bg-white rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-600 font-medium text-lg">Soup</h2>
+                                    <p class="text-gray-400 font-medium text-sm">5 items</p>
+                                </button>
+                                <button class="bg-blue-800 rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-100 font-medium text-lg">Pancake & Toast</h2>
+                                    <p class="text-gray-400 font-medium text-sm">8 items</p>
+                                </button>
+                                <button class="bg-white rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-600 font-medium text-lg">Pasta</h2>
+                                    <p class="text-gray-400 font-medium text-sm">4 items</p>
+                                </button>
+                                <button class="bg-white rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-600 font-medium text-lg">Waffle</h2>
+                                    <p class="text-gray-400 font-medium text-sm">3 items</p>
+                                </button>
+                                <button class="bg-white rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-600 font-medium text-lg">Snacks</h2>
+                                    <p class="text-gray-400 font-medium text-sm">8 items</p>
+                                </button>
+                                <button class="bg-white rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-600 font-medium text-lg">Desserts</h2>
+                                    <p class="text-gray-400 font-medium text-sm">8 items</p>
+                                </button>
+                                <button class="bg-white rounded-lg py-4 px-4 w-full text-left transform transition duration-300 hover:scale-105">
+                                    <h2 class="text-gray-600 font-medium text-lg">Beverage</h2>
+                                    <p class="text-gray-400 font-medium text-sm">9 items</p>
+                                </button>
+                            </div>
+                            <!-- grid-2 -->
+                            
+                                <div class="grid grid-cols-1 md:grid md:grid-cols-3 gap-6 mt-5 border-b-2 border-gray-200 pb-8">
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="1.jpg" alt="" class=" h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Milkshake</p>
+                                    </button>
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="2.jpg" alt="" class="h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Hotdog</p>
+                                    </button>
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="3.jpg" alt="" class="h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Root Beer</p>
+                                    </button>
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="4.jpg" alt="" class="h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Avacado Burger</p>
+                                    </button>
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="5.jpg" alt="" class="h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Vanilla Latte</p>
+                                    </button>
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="6.jpg" alt="" class="h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Staters</p>
+                                    </button>
+                                    <button class="bg-white rounded-lg py-4 px-4 w-full transform transition duration-300 hover:scale-105">
+                                        <img src="food-beverage-7.jpg" alt="" class="h-40 w-48 object-cover mx-auto rounded-lg">
+                                        <p class="text-gray-600 font-medium mt-4">Desserts</p>
+                                    </button>
+                                </div>
+                            
+                        </div>
+                        <!-- flex-right -->
+                        <div class="w-full lg:w-1/3">
+                            <!-- box-1 -->
+                            <div class="bg-white rounded-lg flex justify-between items-center p-2">
+                                <div>
+                                    <button class="bg-blue-800 px-10 py-2 mt-4 md:mt-0 text-gray-100 font-medium rounded-lg">Ticket</button>
+                                </div>
+                                <div>
+                                    <button class="text-gray-800 font-medium pr-6">Details</button>
+                                </div>
+                            </div>
+                            <!-- box-2 -->
+                            <div class="rounded-lg bg-white p-2 mt-4"> 
+                                <div class="flex justify-between transform transition duration-200 rounded-lg hover:bg-gray-200 p-3">
+                                    <div>
+                                        <h1 class="text-gray-700 font-medium">Milkshake x 1</h1>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">80/-</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between transform transition duration-200 rounded-lg hover:bg-gray-200 p-3">
+                                    <div>
+                                        <h1 class="text-gray-700 font-medium">Hotdog x 1</h1>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">180/-</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between transform transition duration-200 rounded-lg hover:bg-gray-200 p-3">
+                                    <div>
+                                        <h1 class="text-gray-700 font-medium">Avacado Burger x 1</h1>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">200/-</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between transform transition duration-200 rounded-lg hover:bg-gray-200 p-3">
+                                    <div>
+                                        <h1 class="text-gray-700 font-medium">Venilla Latte x 1</h1>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">90/-</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between transform transition duration-200 rounded-lg hover:bg-gray-200 p-3">
+                                    <div>
+                                        <h1 class="text-gray-700 font-medium">Dessert x 1</h1>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-700 font-medium">150/-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box-3 -->
+                            <div class="mt-5 bg-white p-3 rounded-lg">
+                                <div class="flex items-center justify-around">
+                                    <div>
+                                        <input type="text" name="" id="" placeholder="Apply Coupon Code.." class="bg-gray-200 rounded-lg px-4 py-2">
+                                    </div>
+                                    <div>
+                                        <button class="px-4 py-2 bg-blue-800 rounded-lg font-medium text-gray-100">Apply</button> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box-4 -->
+                            <div class="rounded-lg bg-white p-2 mt-4">
+                                <div class="flex justify-between p-3">
+                                    <h1 class="text-gray-700">Subtotal</h1>
+                                    <p class="text-gray-700 font-medium">700/-</p> 
+                                </div>
+                                <div class="flex justify-between p-3">
+                                    <h1 class="text-gray-700">Discount</h1>
+                                    <p class="text-gray-700 font-medium">-100/-</p> 
+                                </div>
+                                <div class="flex justify-between p-3 border-b-2 border-gray-100 pb-6">
+                                    <h1 class="text-gray-700">Taxes</h1>
+                                    <p class="text-gray-700 font-medium">10%</p>
+                                </div>
+                                <div class="flex justify-between p-4">
+                                    <h1 class="text-gray-700 font-medium">Total</h1>
+                                    <p class="text-gray-700 font-medium">10%</p>
+                                </div>
+                            </div>
+                            <!-- box-5 -->
+                            <div class="flex justify-between mt-4">
+                                <div class="border border-gray-300 rounded-lg px-4 py-2"> 
+                                    <h1 class="font-medium text-gray-700">Clear Items</h1>
+                                </div>
+                                <div class="bg-blue-800 rounded-lg px-8 py-2">
+                                    <h1 class="font-medium text-gray-100">Charge</h1>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

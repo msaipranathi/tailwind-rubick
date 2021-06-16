@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df596957de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dark:bg-gray-800 bg-blue-800 w-full py-4 lg:px-6">
+        <div class="flex justify-between px-3 lg:hidden mb-8">
+            <div class="flex items-center">
+                <img src="logo.svg" alt="" class="w-6 mr-3">
+                <h1 class="text-gray-100 dark:text-white font-semibold text-xl">Rubick</h1>
+            </div>
+            <button class="menu text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col lg:flex lg:flex-row">
+            <!-- sidenav -->
+            <div class="hidden lg:block w-full lg:w-1/6 p-4 transform transition-all duration-100 items">
+                <!-- logo -->
+                <div class="flex items-center border-b-2 border-gray-500 pb-6 ">
+                    <img src="logo.svg" alt="" class="w-6 mr-3">
+                    <h1 class="text-gray-100 font-semibold text-xl">Rubick</h1>
+                </div>
+                <!-- nav-1 -->
+                <nav class="mt-6 border-b-2 border-gray-500 pb-10">
+                    <div class="flex transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <a href="index.html" class="text-gray-100 font-medium text-sm">Dashboard</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Menu Layout</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                        </svg>
+                        <a href="inbox.html" class="text-gray-100 font-normal text-sm">Inbox</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hard-drive text-gray-100 mr-3"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>
+                        <a href="file.html" class="text-gray-100 font-normal text-sm">File Manager</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                          </svg>
+                        <a href="scale.html" class="text-gray-100 font-normal text-sm">Point Of Scale</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Chat</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Post</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Calendar</a>
+                    </div>
+                </nav>
+                <!-- nav-2 -->
+                <nav class="mt-6 border-b-2 border-gray-500 pb-10">
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Crud</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Users</a>
+                        
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Profile</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Pages</a>
+                        
+                    </div>
+                    
+                </nav>
+                <!-- nav-3 -->
+                <nav class="mt-6 ">
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                        </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Components</a>
+                        
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                          </svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Forms</a>
+                    </div>
+                    <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hard-drive text-gray-100 mr-3"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg>
+                        <a href="" class="text-gray-100 font-normal text-sm">Widgets</a>
+                        
+                    </div>
+                </nav>
+            </div>
+            <!-- theme -->
+            <div class="bg-gray-100 dark:bg-gray-700 p-4 flex-grow rounded-3xl relative">
+                <!-- nav -->
+                <div class="flex justify-between border-b-2 border-gray-300 dark:border-gray-600 pb-4">
+                    <!-- flex-1 -->
+                    <div class="hidden md:flex items-center">
+                        <a href="" class="flex items-center text-blue-600 dark:text-blue-400 text-sm">Application <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                        <a href="" class="text-sm text-gray-600 dark:text-gray-100">Dashboard</a>
+                    </div>
+                    <!-- flex-2 -->
+                    <div class="flex items-center">
+                        <div class="flex bg-gray-300 py-2 px-3 rounded-full mr-4">
+                            <input type="search" name="" id="" placeholder="Search" class="bg-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                        </div>
+                        <a href="" class="mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                              </svg>
+                        </a>
+                        <a href="" class="mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- inbox -->
+                <div class="flex flex-col lg:flex lg:flex-row mt-4">
+                    <div class="w-full lg:w-1/4">
+                        <h1 class="text-lg text-gray-700 dark:text-gray-200 font-semibold">Inbox</h1>
+                        <div class="bg-blue-800 p-4 rounded-lg mt-8">
+                            <div class="flex items-center justify-center border-b-2 border-gray-500 pb-6">
+                                <div class="bg-white flex items-center justify-center py-2 w-full rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                    </svg>
+                                    <h1 class="text-gray-500 font-medium">Compose</h1>
+                                </div>
+                            </div>
+                            <nav class="mt-6 border-b-2 border-gray-500 pb-10">
+                                <div class="flex transform transition duration-150 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+                                      </svg>
+                                    <a href="" class="text-gray-100 font-medium text-sm">Inbox</a>
+                                </div>
+                                <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                      </svg>
+                                    <a href="" class="text-gray-100 font-normal text-sm">Marked</a>
+                                </div>
+                                <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                                    </svg>
+                                    <a href="inbox.html" class="text-gray-100 font-normal text-sm">Draft</a>
+                                </div>
+                                <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                      </svg>
+                                    <a href="" class="text-gray-100 font-normal text-sm">Sent</a>
+                                </div>
+                                <div class="flex mt-8 transform transition duration-150 hover:scale-105">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                    <a href="" class="text-gray-100 font-normal text-sm">Trash</a>
+                                </div>
+                            </nav>
+                            <nav class="mt-4">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 mr-3 rounded-full bg-yellow-500">
+                                    </div>
+                                    <p class="dark:text-gray-200 text-gray-100 text-sm font-medium">Custom Work</p>
+                                </div>
+                                <div class="flex items-center mt-6">
+                                    <div class="w-2 h-2 mr-3 rounded-full bg-green-400">
+                                    </div>
+                                    <p class="dark:text-gray-200 text-gray-100 text-sm font-medium">Important Meetings</p>
+                                </div>
+                                <div class="flex items-center mt-6">
+                                    <div class="w-2 h-2 mr-3 rounded-full bg-yellow-300">
+                                    </div>
+                                    <p class="dark:text-gray-200 text-gray-100 text-sm font-medium">Work</p>
+                                </div>
+                                <div class="flex items-center mt-6">
+                                    <div class="w-2 h-2 mr-3 rounded-full bg-yellow-600">
+                                    </div>
+                                    <p class="dark:text-gray-200 text-gray-100 text-sm font-medium">Design</p>
+                                </div>
+                                <div class="flex items-center mt-6">
+                                    <div class="w-2 h-2 mr-3 rounded-full bg-red-500">
+                                    </div>
+                                    <p class="dark:text-gray-200 text-gray-100 text-sm font-medium">Next Week</p>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="w-full lg:flex-grow lg:ml-6">
+                        <div class="flex flex-col md:flex md:flex-row justify-between items-center">
+                            <div class="mt-4 lg:mt-0">
+                                <div class="hidden md:flex bg-white py-2 px-3 rounded-lg mr-4">
+                                    <input type="search" name="" id="" placeholder="Search" class="bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                      </svg>
+                                </div>
+                            </div>
+                            <div class="mt-4 lg:mt-0">
+                                <button class="bg-blue-800 py-2 px-4 text-gray-100 rounded-lg font-medium">Start a Video Call</button>
+                            </div>
+                        </div>
+                        <div class="mt-6 rounded-lg">
+                            <!-- row-1 -->
+                            <div class="flex justify-between items-center bg-white p-4 rounded-tl-lg rounded-tr-lg">
+                                <div class="flex justify-between">
+                                    <div class="flex items-center">
+                                        <i class="far fa-square text-gray-400 mr-2"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <h1 class="text-gray-400 font-medium mr-4">1-50 of 5,236</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- row-2 -->
+                            <div class="transform transition duration-300 hover:scale-105">
+                                <div class="flex justify-between bg-white mt-1 px-4 py-3">
+                                    <div class="flex items-center">
+                                        <i class="far fa-square text-gray-400 mr-3"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3 lg:mr-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                        <h1 class="font-medium text-gray-700 mr-6 w-full lg:mr-0">Brad Pitt</h1>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                    </div>
+                                    <div>
+                                        <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row-3 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+
+                            <!-- row-4 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-5 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-6 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-7 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-8 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-9 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-10 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-11 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-12 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-13 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-14 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-15 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-16 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-17 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-18 -->
+                            <div class="flex justify-between bg-white mt-1 px-4 py-3 transform transition duration-300 hover:scale-105">
+                                <div class="flex items-center">
+                                    <i class="far fa-square text-gray-400 mr-3"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                                    </svg>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="img-10.jpg" alt="" class="w-6 h-6 mr-3 rounded-full object-cover">
+                                    <h1 class="font-medium text-gray-700">Brad Pitt</h1>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur </p>
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-gray-800">10:30 AM</h2>
+                                </div>
+                            </div>
+                            <!-- row-19 -->
+                            <div class="flex flex-col lg:flex lg:flex-row items-center justify-between bg-white mt-1 px-4 py-3 rounded-bl-lg rounded-br-lg">
+                                <div>
+                                    <h2 class="text-gray-400 font-medium">4.41 GB (25%) of 17 GB used Manage</h2>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 font-medium">Last account activity: 36 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
